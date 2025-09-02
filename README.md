@@ -1,10 +1,10 @@
 # Trial of Knowledge: The Magic Quiz
 # The App
-You can play *Trial of Knowledge* at the website hosted on GitHub pages: <https://tmiguelt.github.io/MagicQuiz/>
+You can play *Trial of Knowledge* at the website hosted on GitHub pages: <https://multimeric.github.io/MagicQuiz/>
 
 # Contributing
 
-If you want to help improve *Trial of Knowledge*, feel free to fork this repository and create a pull request. If you're not sure what needs work, have a look at the [issues page](https://github.com/TMiguelT/MagicQuiz/issues). Even if there is nothing currently wrong with the application, feel free to contribute more preset quizzes (add some more entries in `src/presets.js`).
+If you want to help improve *Trial of Knowledge*, feel free to fork this repository and create a pull request. If you're not sure what needs work, have a look at the [issues page](https://github.com/multimeric/MagicQuiz/issues). Even if there is nothing currently wrong with the application, feel free to contribute more preset quizzes (add some more entries in `src/presets.js`).
 
 ## Technologies
 *Trial of Knowledge* is written in JavaScript (ES2016). The application uses ReactJS in combination with MobX to create the user interface and manage state.

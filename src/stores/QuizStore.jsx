@@ -1,15 +1,12 @@
 import {observable, action, computed} from 'mobx';
-import ScryfallClient from 'scryfall-client';
+import scryfall from 'scryfall-client';
 import XRegExp from 'xregexp';
 import shuffle from 'lodash.shuffle';
 
 import ScryfallCard from '../models/ScryfallCard';
 import {history, routerStore} from './RouterStore';
 
-const scryfall = new ScryfallClient();
-
 const letterRegex = XRegExp('[^\\p{Letter}]+', 'g');
-
 
 class Quiz {
     @observable quizData;
@@ -170,9 +167,7 @@ class Quiz {
         this._quizState = 'loading';
 
         scryfall.get('cards/search', {q: this.query})
-            .then(this.receiveCards.bind(this))
-            .catch(() => {
-            });
+            .then(this.receiveCards.bind(this));
     }
 
     @action receiveCards(list) {
